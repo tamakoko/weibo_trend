@@ -5,9 +5,10 @@ layout: default
 We analyze more than 25 million real-time tweets on Twitter related to Coronavirus to give up-to-date insights about the pandemic from the lens of social media. How are people reacting to the outbreak? How is Twitter being used to circulate vital information and updates? How is it being abused for spreading false information, panic and hate?
 
 ### title 1
-
+<div id="title1" style="width: 100%;height:400px;"></div>
 <script>
-  option = {
+  var myChart1 = echarts.init(document.getElementById('title1'));
+  option1 = {
     legend: {},
     tooltip: {},
     dataset: {
@@ -28,13 +29,15 @@ We analyze more than 25 million real-time tweets on Twitter related to Coronavir
         {type: 'bar'},
         {type: 'bar'}
     ]
-};
+  };
+  myChart1.setOption(option1);
 </script>
 
 ### title 2
-
+<div id="title2" style="width: 100%;height:400px;"></div>
 <script>
-  option = {
+  var myChart2 = echarts.init(document.getElementById('title2'));
+  option2 = {
     tooltip: {
         trigger: 'item',
         formatter: '{a} <br/>{b}: {c} ({d}%)'
@@ -121,7 +124,8 @@ We analyze more than 25 million real-time tweets on Twitter related to Coronavir
             ]
         }
     ]
-};
+  };
+  myChart2.setOption(option2);
 </script>
 
 ### title 3
